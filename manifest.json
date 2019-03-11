@@ -1,0 +1,14 @@
+{
+  "name": "Page Font Bolder",
+  "version": "1.2",
+  "description": "Make the page font bolder",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "Set this page's font bolder.",
+    "default_popup": "popup.html"
+},
+  "manifest_version": 2
+}
