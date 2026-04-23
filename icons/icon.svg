@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Page Font Bolder icon">
+  <defs>
+    <linearGradient id="paper" x1="18" y1="8" x2="110" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff5cf"/>
+      <stop offset="1" stop-color="#e6c47a"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="30" y1="20" x2="94" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#293820"/>
+      <stop offset="1" stop-color="#10170f"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#192417"/>
+  <rect x="10" y="10" width="108" height="108" rx="24" fill="url(#paper)"/>
+  <path d="M37 91 58 34h14l21 57H78l-4-13H55l-4 13H37Zm22-26h11l-5-17h-1l-5 17Z" fill="url(#ink)"/>
+  <path d="M32 96h64" stroke="#10170f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M32 107h48" stroke="#334929" stroke-width="6" stroke-linecap="round" opacity=".88"/>
+</svg>

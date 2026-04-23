@@ -1,0 +1,75 @@
+:root {
+  color: #172018;
+  background: #f7f1df;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  width: 240px;
+  margin: 0;
+  padding: 14px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 205, 96, 0.35), transparent 32%),
+    linear-gradient(145deg, #fffaf0 0%, #efe5ca 100%);
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.panel {
+  border: 1px solid rgba(23, 32, 24, 0.18);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 28px rgba(66, 48, 12, 0.14);
+}
+
+.toggle-row,
+.value-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.control {
+  margin-top: 14px;
+}
+
+.value {
+  min-width: 42px;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: #223321;
+  color: #fff7df;
+  font-size: 12px;
+  text-align: center;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 8px;
+  accent-color: #486a2f;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #486a2f;
+}
+
+.hint {
+  margin: 12px 0 0;
+  color: #5d614f;
+  font-size: 12px;
+  line-height: 1.35;
+}
