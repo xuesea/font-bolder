@@ -5,7 +5,7 @@
 }
 
 body {
-  width: 292px;
+  width: 304px;
   margin: 0;
   padding: 14px;
   background:
@@ -13,11 +13,7 @@ body {
     linear-gradient(145deg, #fffaf0 0%, #efe5ca 100%);
 }
 
-h1 {
-  margin: 0 0 10px;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-}
+h1 { margin: 0 0 10px; font-size: 18px; letter-spacing: 0.02em; }
 
 .panel {
   border: 1px solid rgba(23, 32, 24, 0.18);
@@ -27,133 +23,39 @@ h1 {
   box-shadow: 0 12px 28px rgba(66, 48, 12, 0.14);
 }
 
-.scope-row,
-.preset-grid,
-.actions,
-.toggle-row,
-.value-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.scope-row, .preset-grid, .actions, .toggle-row, .value-row { display: flex; align-items: center; gap: 8px; }
+.scope-row { padding: 3px; border-radius: 999px; background: rgba(34, 51, 33, 0.08); }
 
-.scope-row {
-  padding: 3px;
-  border-radius: 999px;
-  background: rgba(34, 51, 33, 0.08);
-}
-
-.scope-button,
-.preset-button,
-.secondary-button {
+.scope-button, .preset-button, .secondary-button, select {
   border: 1px solid rgba(34, 51, 33, 0.2);
   border-radius: 999px;
   padding: 6px 9px;
   background: rgba(255, 250, 240, 0.7);
   color: #223321;
-  cursor: pointer;
   font-family: inherit;
   font-size: 12px;
   font-weight: 700;
 }
 
-.scope-button {
-  flex: 1;
-  border-color: transparent;
-  background: transparent;
-}
-
-.scope-button.active,
-.preset-button.active {
-  background: #223321;
-  color: #fff7df;
-}
-
-.scope-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.45;
-}
-
-.scope-hint {
-  margin: 8px 0 12px;
-  color: #5d614f;
-  font-size: 12px;
-  line-height: 1.35;
-}
-
-.toggle-row,
-.value-row {
-  justify-content: space-between;
-}
-
-label,
-.control-title {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.control {
-  margin-top: 14px;
-}
-
-.value {
-  min-width: 42px;
-  border-radius: 999px;
-  padding: 2px 8px;
-  background: #223321;
-  color: #fff7df;
-  font-size: 12px;
-  text-align: center;
-}
-
-input[type="range"] {
-  width: 100%;
-  margin-top: 8px;
-  accent-color: #486a2f;
-}
-
-input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  accent-color: #486a2f;
-}
-
-.preset-grid {
-  margin-top: 9px;
-}
-
-.preset-button {
-  flex: 1;
-}
-
-.preview {
-  display: grid;
-  gap: 4px;
-  margin-top: 14px;
-  border: 1px dashed rgba(34, 51, 33, 0.25);
-  border-radius: 12px;
-  padding: 10px;
-  background: rgba(255, 250, 240, 0.72);
-  color: #233220;
-  font-size: 14px;
-  line-height: 1.45;
-}
-
-.actions {
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-
-.secondary-button:hover,
-.preset-button:hover,
-.scope-button:hover:not(:disabled) {
-  border-color: rgba(34, 51, 33, 0.4);
-}
-
-.hint {
-  margin: 12px 0 0;
-  color: #5d614f;
-  font-size: 12px;
-  line-height: 1.35;
-}
+.scope-button, .preset-button, .secondary-button { cursor: pointer; }
+.scope-button { flex: 1; border-color: transparent; background: transparent; }
+.scope-button.active, .preset-button.active { background: #223321; color: #fff7df; }
+.scope-button:disabled { cursor: not-allowed; opacity: 0.45; }
+.scope-hint, .mini-hint, .exception-hint { margin: 8px 0 0; color: #5d614f; font-size: 12px; line-height: 1.35; }
+.scope-hint { margin-bottom: 12px; }
+.exception-hint { border-radius: 10px; padding: 8px; background: rgba(132, 55, 31, 0.1); color: #84371f; font-weight: 700; }
+.toggle-row, .value-row { justify-content: space-between; }
+label, .control-title { display: block; font-size: 13px; font-weight: 700; }
+.control { margin-top: 14px; }
+.value { min-width: 42px; border-radius: 999px; padding: 2px 8px; background: #223321; color: #fff7df; font-size: 12px; text-align: center; }
+input[type="range"], select { width: 100%; margin-top: 8px; accent-color: #486a2f; }
+select { border-radius: 10px; cursor: pointer; appearance: none; }
+input[type="checkbox"] { width: 18px; height: 18px; accent-color: #486a2f; }
+.preset-grid { margin-top: 9px; }
+.preset-button { flex: 1; }
+.preview { display: grid; gap: 4px; margin-top: 14px; border: 1px dashed rgba(34, 51, 33, 0.25); border-radius: 12px; padding: 10px; background: rgba(255, 250, 240, 0.72); color: #233220; font-size: 14px; line-height: 1.45; }
+.actions { flex-wrap: wrap; margin-top: 12px; }
+.secondary-button:hover, .preset-button:hover, .scope-button:hover:not(:disabled) { border-color: rgba(34, 51, 33, 0.4); }
+.danger-button { color: #84371f; }
+.danger-button.active-danger { background: #84371f; color: #fff7df; }
+.hint { margin: 12px 0 0; color: #5d614f; font-size: 12px; line-height: 1.35; }

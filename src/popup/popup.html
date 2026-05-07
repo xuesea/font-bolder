@@ -37,6 +37,16 @@
       </div>
 
       <div class="control">
+        <label for="targetingMode" data-i18n="targetingMode">Apply to</label>
+        <select id="targetingMode">
+          <option value="body" data-i18n="targetBody">Body text only</option>
+          <option value="bodyHeadings" data-i18n="targetBodyHeadings">Body + headings</option>
+          <option value="all" data-i18n="targetAll">All text</option>
+        </select>
+        <p class="mini-hint" data-i18n="targetingHint">Code, forms, navigation, math, icons, and media are skipped automatically.</p>
+      </div>
+
+      <div class="control">
         <div class="value-row">
           <span class="control-title" data-i18n="presets">Presets</span>
           <span id="presetValue" class="value">Custom</span>
@@ -54,11 +64,13 @@
       </div>
 
       <div class="actions">
-        <button id="boost" class="secondary-button" type="button" data-i18n="boost">Boost this tab</button>
-        <button id="clearBoost" class="secondary-button" type="button" data-i18n="clearBoost">Stop boost</button>
+        <button id="boost" class="secondary-button" type="button" data-i18n="boost">Temporary boost</button>
+        <button id="clearBoost" class="secondary-button" type="button" data-i18n="clearBoost">Reset tab boost</button>
         <button id="resetSite" class="secondary-button" type="button" data-i18n="resetSite">Use global</button>
+        <button id="toggleSiteDisabled" class="secondary-button danger-button" type="button" data-i18n="disableSite">Disable on this site</button>
       </div>
 
+      <p id="exceptionHint" class="exception-hint" hidden></p>
       <p class="hint" data-i18n="hint">Settings are saved automatically and applied early on newly opened pages to reduce visual flicker.</p>
     </div>
     <script src="popup.js"></script>

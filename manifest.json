@@ -1,6 +1,6 @@
 {
   "name": "Page Font Bolder",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Make page fonts bolder and darker for better readability.",
   "permissions": [
     "activeTab",
@@ -35,5 +35,22 @@
     "default_title": "Adjust page font boldness.",
     "default_popup": "src/popup/popup.html"
   },
-  "manifest_version": 3
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "commands": {
+    "toggle-extension": {
+      "suggested_key": {
+        "default": "Alt+B"
+      },
+      "description": "Toggle Font Bolder"
+    },
+    "cycle-preset": {
+      "suggested_key": {
+        "default": "Alt+Shift+B"
+      },
+      "description": "Cycle Font Bolder preset"
+    }
+  }
 }
