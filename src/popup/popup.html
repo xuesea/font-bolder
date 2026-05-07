@@ -8,6 +8,13 @@
   <body>
     <h1 data-i18n="title">Font Bolder</h1>
     <div class="panel">
+      <div class="scope-row" role="group" aria-label="Settings scope">
+        <button id="globalScope" class="scope-button" type="button" data-scope="global" data-i18n="globalScope">Global</button>
+        <button id="siteScope" class="scope-button" type="button" data-scope="site" data-i18n="siteScope">This site</button>
+      </div>
+
+      <p id="scopeHint" class="scope-hint">Editing global settings.</p>
+
       <div class="toggle-row">
         <label for="enabled" data-i18n="enabled">Enable bold and dark text</label>
         <input id="enabled" type="checkbox">
@@ -27,6 +34,29 @@
           <span id="darkenValue" class="value">0.20px</span>
         </div>
         <input id="darken" type="range" min="0" max="0.8" step="0.05">
+      </div>
+
+      <div class="control">
+        <div class="value-row">
+          <span class="control-title" data-i18n="presets">Presets</span>
+          <span id="presetValue" class="value">Custom</span>
+        </div>
+        <div class="preset-grid">
+          <button class="preset-button" type="button" data-preset="comfort" data-i18n="presetComfort">Comfort</button>
+          <button class="preset-button" type="button" data-preset="contrast" data-i18n="presetContrast">Contrast</button>
+          <button class="preset-button" type="button" data-preset="heavy" data-i18n="presetHeavy">Heavy</button>
+        </div>
+      </div>
+
+      <div class="preview" id="preview">
+        <span>The quick brown fox jumps over the lazy dog.</span>
+        <span>清晰阅读，让网页文字更醒目。</span>
+      </div>
+
+      <div class="actions">
+        <button id="boost" class="secondary-button" type="button" data-i18n="boost">Boost this tab</button>
+        <button id="clearBoost" class="secondary-button" type="button" data-i18n="clearBoost">Stop boost</button>
+        <button id="resetSite" class="secondary-button" type="button" data-i18n="resetSite">Use global</button>
       </div>
 
       <p class="hint" data-i18n="hint">Settings are saved automatically and applied early on newly opened pages to reduce visual flicker.</p>
